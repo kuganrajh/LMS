@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.SMSHandler", "WLV.LMS.SMSHandler\WLV.LMS.SMSHandler.csproj", "{D390642B-E009-4F33-AA00-CBC7FC762519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.BO", "WLV.LMS.BO\WLV.LMS.BO.csproj", "{6480FF64-9EA6-4FC1-A936-FF8DBE01FE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.BLL", "WLV.LMS.BLL\WLV.LMS.BLL.csproj", "{6EC7C2DC-738C-4DF2-8C89-16E1378A314A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.Service", "WLV.LMS.Service\WLV.LMS.Service.csproj", "{70A2BDA1-F958-4D38-ABD6-EA0CA674FF26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.DAL", "WLV.LMS.DAL\WLV.LMS.DAL.csproj", "{2C043B7F-7AC3-4A22-8DD2-8E4EC7A6BBC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D390642B-E009-4F33-AA00-CBC7FC762519}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6480FF64-9EA6-4FC1-A936-FF8DBE01FE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6480FF64-9EA6-4FC1-A936-FF8DBE01FE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6480FF64-9EA6-4FC1-A936-FF8DBE01FE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6480FF64-9EA6-4FC1-A936-FF8DBE01FE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC7C2DC-738C-4DF2-8C89-16E1378A314A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC7C2DC-738C-4DF2-8C89-16E1378A314A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC7C2DC-738C-4DF2-8C89-16E1378A314A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC7C2DC-738C-4DF2-8C89-16E1378A314A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A2BDA1-F958-4D38-ABD6-EA0CA674FF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A2BDA1-F958-4D38-ABD6-EA0CA674FF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A2BDA1-F958-4D38-ABD6-EA0CA674FF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A2BDA1-F958-4D38-ABD6-EA0CA674FF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C043B7F-7AC3-4A22-8DD2-8E4EC7A6BBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C043B7F-7AC3-4A22-8DD2-8E4EC7A6BBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C043B7F-7AC3-4A22-8DD2-8E4EC7A6BBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C043B7F-7AC3-4A22-8DD2-8E4EC7A6BBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/krajendran
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WLV.LMS.SMSHandler\\WLV.LMS.SMSHandler.csproj
+		SccProjectName1 = WLV.LMS.SMSHandler
+		SccLocalPath1 = WLV.LMS.SMSHandler
+		SccProjectUniqueName2 = WLV.LMS.BO\\WLV.LMS.BO.csproj
+		SccProjectName2 = WLV.LMS.BO
+		SccLocalPath2 = WLV.LMS.BO
+		SccProjectUniqueName3 = WLV.LMS.BLL\\WLV.LMS.BLL.csproj
+		SccProjectName3 = WLV.LMS.BLL
+		SccLocalPath3 = WLV.LMS.BLL
+		SccProjectUniqueName4 = WLV.LMS.Service\\WLV.LMS.Service.csproj
+		SccProjectName4 = WLV.LMS.Service
+		SccLocalPath4 = WLV.LMS.Service
+		SccProjectUniqueName5 = WLV.LMS.DAL\\WLV.LMS.DAL.csproj
+		SccProjectName5 = WLV.LMS.DAL
+		SccLocalPath5 = WLV.LMS.DAL
+	EndGlobalSection
+EndGlobal

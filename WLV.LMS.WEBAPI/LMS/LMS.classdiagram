@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="3ba172df-660c-4489-a403-f280db0606e2" name="LMS" linkedPackageId="d96ba8c2-5d40-4998-8df6-a617c0fb5a39" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fb71aad1-772e-455f-995a-db3ee3707f30" name="Common" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2b878e0a-8225-450a-8606-096e059c8466" />
+        <ownedAttributesInternal>
+          <property Id="d9b81757-7106-4459-b4c2-6c67dbbcfb1c" name="IsActive" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8d2c34a-5d0a-43b7-b5c3-fb5e3f530c8b" />
+          </property>
+          <property Id="33e2bf08-ce7b-4798-858f-d280cc2243af" name="CreatedAt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c7903db8-9e6f-416e-8b4a-022dc3b6b6c1" />
+          </property>
+          <property Id="10157718-016f-4f5b-908b-16252b603159" name="CreatedBy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4916e0a7-b817-4ad1-b7ad-1ed3d69998c6" />
+          </property>
+          <property Id="328fb7ed-b227-49c8-9ae5-3f859713aa2b" name="UpdatedBy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9855ae4c-f527-4f6d-a408-9bf3c6577574" />
+          </property>
+          <property Id="6efcb3f8-d45b-45ba-9695-a4ce0346deb8" name="UpdatedAt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72a50d2f-f594-472e-ba24-4514d8f452cd" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="53733ef3-7614-4570-bda6-49b567194619" name="SetTimeNow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0b26bc39-bf41-430a-a8d2-e530b18f1720" />
+          </operation>
+          <operation Id="e05c55dd-81b9-49ee-a61e-12849b1a7221" name="UpdateTimeNow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9032552f-24c9-42cb-be08-ebe742a78ca6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b58c3865-1fdc-4de3-8af7-36a59ac96c09" name="Category" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57b733b7-7658-4c04-a8f9-1f4c51692d32" />
+        <generalsInternal>
+          <generalization Id="12085a82-4597-4827-b452-e14b7255a729" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="c98b8f44-106b-4fc7-80fa-4be4fddfe90a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="67e99c56-a3cf-46c0-8938-3bf3d2cb3e38" name="Books" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecaac6fb-ec65-4d10-becf-da94c59df66e" />
+          </property>
+          <property Id="f68dd089-7711-4b52-bc51-ffd9998ea733" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6235219-39f6-4187-8593-7e92ea1f6cea" />
+          </property>
+          <property Id="5608fbb8-de6c-4908-9cd6-0206b644ece6" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8ff5ab1d-d236-4e62-8df5-a7d4a3bb8a51" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc56b6a1-cf4f-4747-9747-aa0ff5e60e55" name="GetCategory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f02eeea6-2f1a-4bd9-9222-57e29606189e" />
+          </operation>
+          <operation Id="b22a73ab-2f0e-4e08-a536-a0e50ed9600e" name="UpdateCategory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f91561b-cbb6-4f4b-b33f-ad3e5c8da0e4" />
+          </operation>
+          <operation Id="4628bbc8-6938-4d05-9277-b01842fd5a66" name="CreateCategory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ce2b5dc-29a5-418c-ad3c-5836c8578685" />
+          </operation>
+          <operation Id="f6e44f2b-f100-4545-aa69-88257d97000a" name="DeleteCategoy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d3e75ca-509c-4598-b2a8-2da55c4141c5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dfef45f2-a205-4511-a93c-f1f5486b85ea" name="Author" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77b99ea6-8c33-4877-ae3a-4fabdf44ed0c" />
+        <generalsInternal>
+          <generalization Id="5d608e19-ea14-4873-8c93-8d143fe71326" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="4a112772-d4ae-4851-a9fd-1796865d8b4d" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="0542f877-a726-477d-961d-146c7dccfec3" name="Books" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1c15b371-489a-4138-bec2-56ae5df40e94" />
+          </property>
+          <property Id="b4af45bf-1342-4aba-9abb-452fe4839099" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13d9a62e-1246-4242-9445-9afe9989a1d1" />
+          </property>
+          <property Id="710a95e4-0cd2-48b2-9fe7-3f760d2674f8" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="39236631-c33e-4606-9a93-ca1dd4908d3d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c348467f-0660-440f-b043-8f8a699e77d8" name="CreateAuthor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34ad070b-5d0a-4dce-abaa-f18cf34ab06c" />
+          </operation>
+          <operation Id="943264fb-94b3-4269-9418-e348f6d25f07" name="UpdateAuthor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b869398e-8321-4266-89ab-c7d2ff05403b" />
+          </operation>
+          <operation Id="9a1881e0-2bfb-4d98-856b-43899c5a67ed" name="GetAuthor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ae3ea27-bb2c-4b90-804f-dab0417b47b9" />
+          </operation>
+          <operation Id="1233902e-26bc-4bc5-8469-2575cbd93a39" name="DeleteAuthor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b3a66ec5-d111-44eb-9844-60658919236d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5cc71cd8-a85e-4e93-8039-99f79ed569e0" name="Book" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31300173-2367-477f-9f86-3296ceb52164" />
+        <suppliersInternal>
+          <dependency Id="5452d8d9-7374-4058-82bb-238da17488fa">
+            <classMoniker Id="b58c3865-1fdc-4de3-8af7-36a59ac96c09" LastKnownName="Category" />
+            <elementDefinition Id="cef63649-0c0e-4658-9797-1cb2107927d8" />
+          </dependency>
+          <dependency Id="17cf4097-b9af-4fa9-8897-d24fb55a8429">
+            <classMoniker Id="dfef45f2-a205-4511-a93c-f1f5486b85ea" LastKnownName="Author" />
+            <elementDefinition Id="4c884a93-e7a8-4fa3-8084-203b68d4118b" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="4e1e422a-c35f-4eed-9c26-a68e2cc1a445" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="8c93536f-9561-4dde-aebe-8504dcea5ee4" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="fd01fd03-2ce5-4d5e-8084-29db8fbebf1c" isDerived="false" sourceEndRoleName="Book" targetEndRoleName="BorrowBook" isLeaf="false" isAbstract="false">
+            <classMoniker Id="39dd441c-a8d8-4102-8105-e4eae815183b" LastKnownName="BorrowBook" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb6105ab-724d-47c9-8118-9caddfc30bfe" name="Book" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e62062df-2d7b-4968-aeef-05f41bed813d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0ae7313-c666-4c9f-8e6d-7a0fce9fac6c" name="BorrowBook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="8f5998ed-fdae-41a9-b1ba-3d601bda6c38" name="Lower" value="*">
+                      <elementDefinition Id="52d61dd0-beb3-40ef-9227-bc3923fb29fc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2f8297c5-9585-47ed-a605-7e6e68c00635" name="Upper" value="*">
+                      <elementDefinition Id="69da69b7-938b-4c95-9fda-6295fdb94305" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="478a6148-9c2d-4760-8451-071b733d92c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7aabb5c5-476a-4150-ad1b-421a3f6376a4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="dd503466-6835-44f7-ab26-75af1074de0d" name="Categories" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="49ee0ae2-c341-4dd3-af7d-1b6cf4063da1" />
+          </property>
+          <property Id="a4f8e9fa-547d-4bec-a552-762c82f4e4aa" name="Authors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e2f6be2d-f7c8-4380-bbde-df9a0beb26e9" />
+          </property>
+          <property Id="4da27b5e-8f7d-4d64-bf18-441a05b68cc5" name="BookTotalCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26cea670-db7d-4ce5-a126-d8c89a875b70" />
+          </property>
+          <property Id="648492f0-b3f3-47e5-a0f1-6bea526f6d15" name="BookCurrentCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7afba73d-1095-412a-a9dc-dc2e791ee99d" />
+          </property>
+          <property Id="0047313b-399d-4a25-a779-d3b0ab92d104" name="ImageLink" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b5d12ca9-1767-455f-b2d5-6902fbe44779" />
+          </property>
+          <property Id="0c075b31-245e-45db-b364-e98b1afe0bbf" name="InfoLink" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6df7e766-1796-488a-979f-f96719163957" />
+          </property>
+          <property Id="e0cffebe-64ca-4de6-bd93-e6d97c9a27a1" name="PageCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b0a3ab65-fdf8-47b7-974b-6773c65390a1" />
+          </property>
+          <property Id="ca73db57-e2dc-4067-9977-4b35041a356c" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f9d6954-a6d9-4483-acdc-0d3b67f9b9e0" />
+          </property>
+          <property Id="c1be17a6-cb64-4548-a945-093684eab16e" name="PublishedDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60d96ee8-70db-487e-8022-4e999f324893" />
+          </property>
+          <property Id="57900f17-4c45-4dca-aa79-b6fa822975e2" name="Publisher" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a8d78c2-4e36-41d0-91da-a8fbfaa98d56" />
+          </property>
+          <property Id="be4ca323-6029-4311-b2fc-b9e60d36dbe5" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6b342f29-08dd-4626-abaa-8d45fa9569fe" />
+          </property>
+          <property Id="e109b89a-47ed-498f-b215-077fb424b646" name="ISBN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4865663c-a67e-48e9-a756-f9bc3e73cb47" />
+          </property>
+          <property Id="361080dc-4715-4844-adff-dd95f1bd4c84" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2cac5494-0020-42ce-96f5-7595e89f80f6" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3e514795-3339-4e89-befd-51e88a645b62" name="GetAvailability" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d2939318-37d2-4e8c-a8ea-76da94d43275" />
+          </operation>
+          <operation Id="9c991f6d-95b1-4408-98b7-f8e37fd2d22d" name="GetCount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c2d59fc-5ce7-48b6-8643-f09fd4ecfb34" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39dd441c-a8d8-4102-8105-e4eae815183b" name="BorrowBook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18b77771-7449-488f-bdac-315e7e6961b2" />
+        <generalsInternal>
+          <generalization Id="2da1c7fc-b010-491a-9b40-6ff3ddb152e7" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="374980d2-6e7f-4c19-b1f6-6bb5856d078d" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="a6a43ac0-eb9e-44f3-ac00-f7b8d7846610" name="ReserveBook" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f2aa9dc-d694-45b0-9bb4-fad1f2457160" />
+          </property>
+          <property Id="1c21f3c3-ea2a-4e30-a74e-55013ce62cfc" name="ReserveBookId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6bfba336-2d66-401b-929c-689dd279eddc" />
+          </property>
+          <property Id="16ac5aad-7d63-4501-985f-767beeaf5063" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="955498ba-d3a6-4ebd-a160-954683882af9" />
+          </property>
+          <property Id="1ac21e76-78f3-4bfe-85b3-77cebf3d928c" name="MemberId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82383548-7535-4ea8-b5ac-762e492165ad" />
+          </property>
+          <property Id="cf68df75-7290-4e6f-a336-0ba20dd11407" name="Book" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bdb39cee-4628-4601-b605-ae3a88ace4f2" />
+          </property>
+          <property Id="dc4cf664-587d-469c-a5bb-7eb9219ab766" name="BookId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d5e574f-a79e-4327-b3c1-0154c453c59f" />
+          </property>
+          <property Id="1c073442-5866-4728-bfe0-d447f622e628" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ee046ed-0280-4f4f-9623-b1f0842d32b8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="09f05780-4aa8-45bf-9be2-ab4521ff2809" name="Borrow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a8d3a11-f3c1-4730-99b5-47ccb7cbab6c" />
+          </operation>
+          <operation Id="92738d36-c163-4370-abd5-c7b4ceedb245" name="CancelBorrow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9711c787-0954-4cfb-8e7f-d3cfda466648" />
+          </operation>
+          <operation Id="372bfc44-f28c-43f3-822f-d4a4ee6de428" name="GetBorrowedBookInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee85bad4-e0d2-49c1-8b24-6eb06258a1ef" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b90c9c86-3574-4335-b68e-ef8d931802fc" name="ReturnBook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7c02ba7a-ea61-44ec-89f9-fdc928b43f6a" />
+        <suppliersInternal>
+          <dependency Id="4a800a2e-a895-4f0b-86c5-644648bc7380">
+            <classMoniker Id="1101afb0-0184-4c53-8dde-c28696494794" LastKnownName="ReserveBook" />
+            <elementDefinition Id="fea3973a-57af-47b9-89f7-100c63e3a023" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="2c9243cb-b5e3-4739-86b4-dae33e772022" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="a747b5e9-71c0-47af-af15-c22413cf9fb2" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="6318be43-dcd7-4b15-82db-dca5454d5a6b" name="BorrowBook" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="586d4a41-9970-4a05-8b95-1092a3ed566f" />
+          </property>
+          <property Id="353e1987-6366-43a7-8310-7d483044798b" name="BorrowBookId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69de2cca-f14d-4190-a301-a84480f36948" />
+          </property>
+          <property Id="b1187287-ad0c-46fb-8e1c-25358816194f" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf0675dd-84c7-4fa2-b489-d31496d56bc1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="85952614-98fb-4b26-bb96-4989d30d2e42" name="IsLate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e17f7f02-1fb2-463b-a6c7-d215067171ef" />
+          </operation>
+          <operation Id="59c0351c-0630-4423-957e-5cce95bbdc0a" name="RetrunBook" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8216ac2a-9daf-44a3-a4ad-314e1bbe9451" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f4a5f14-27cb-4124-89ac-a8db415c46e7" name="LatePayment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0cf7cbfd-a31a-4747-80ea-539dc593ed2a" />
+        <suppliersInternal>
+          <dependency Id="b69c3370-988a-47a0-9dee-c5440ec20349">
+            <classMoniker Id="b90c9c86-3574-4335-b68e-ef8d931802fc" LastKnownName="ReturnBook" />
+            <elementDefinition Id="55cd1898-696f-4953-82c5-9dec08b3a9d6" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="d4b2fefa-c64c-4fd8-a8d6-206b24b94d1e" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="7a840568-4040-495c-8402-6f316a2fcb18" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="3c1f4378-5fa6-48b0-a30d-c7d0b3d1d2d7" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07e66f83-426c-46b9-925a-eff5774694cc" />
+          </property>
+          <property Id="7b9e8fab-2577-41e5-af8c-428e3326efa2" name="NoOfDateDelays" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac77acf6-537a-4e59-9562-53eff50d0c31" />
+          </property>
+          <property Id="c2465f8a-5254-4c92-ae1a-df2ff9e39580" name="PaymentAmount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fbe9c568-eef6-4ca7-a68a-218812f6a360" />
+          </property>
+          <property Id="49ae18c0-fee6-44f1-853d-7b6ec2a194fa" name="ReturnBookId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe1c8547-0e9e-49ad-9999-a83b148e5d87" />
+          </property>
+          <property Id="6808d35b-d4a5-4184-a0c0-f4efdc29ffad" name="ReturnBook" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5dff3123-354a-4765-887a-7edda15909c1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="9fd6f970-7a46-46b3-9e00-514d5cd45a09" name="CalculateFine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a497e471-a805-4041-90cf-feb0695e2395" />
+          </operation>
+          <operation Id="19195639-bec1-4091-90b2-c8937ff906a8" name="GetLatePymentInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="02283f1f-9db9-4670-84e6-a07a6b8a43c8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1101afb0-0184-4c53-8dde-c28696494794" name="ReserveBook" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="430a95d1-abc1-477d-b779-55bcc0a49f36" />
+        <generalsInternal>
+          <generalization Id="93b96e8e-53dc-4197-9413-e182e84cd67b" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="4aac88a8-2dd7-46a3-9fce-008fd117da9b" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="04d98b00-8361-4afa-af6d-028ea2e715b8" isDerived="false" sourceEndRoleName="ReserveBook" targetEndRoleName="BorrowBook" isLeaf="false" isAbstract="false">
+            <classMoniker Id="39dd441c-a8d8-4102-8105-e4eae815183b" LastKnownName="BorrowBook" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2963df64-1762-4f73-8870-431e0c804d29" name="ReserveBook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c781a858-81e4-48f7-ab8c-e02a4e80b865" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad7139f7-4726-42a1-901f-cd7947cb297e" name="BorrowBook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="577dec13-7d49-4401-b673-f850a50a98af" name="Lower" value="*">
+                      <elementDefinition Id="e1def83a-3483-4ac6-8608-80ec8f16a73f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="52afb5b1-5554-4801-aeb1-a6333c3b6371" name="Upper" value="*">
+                      <elementDefinition Id="fb3e62a7-dd43-4aa6-a2e0-86054629a661" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bbb2befa-78fd-45bf-89df-e23b76d44ffb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11bbd324-a07d-4c7c-9958-d7c14f4e0169" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a3ed10e3-f6af-49d9-8751-1a0994ccf321" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f75ceb2d-2667-44be-b930-7c13c70e62b5" />
+          </property>
+          <property Id="26d62e46-44d4-43cc-846e-8abbf2a528d7" name="BarrowDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13fe17b6-6c34-4bb3-9608-a97dd9f97568" />
+          </property>
+          <property Id="be713c4f-aced-4d89-bb61-63027d809cd3" name="MemberId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="05f53c2f-12f4-4695-a5ac-9510609c2f0e" />
+          </property>
+          <property Id="3298d19d-71d8-4fb4-9104-e9ad33f9e823" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7f2ec7a4-3a82-4160-aa59-19d54bf1718e" />
+          </property>
+          <property Id="b0ec9e34-138d-4b76-bf24-677f50cadb1f" name="BookId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="827e481a-06d8-406c-9e4d-805aaad2cbb4" />
+          </property>
+          <property Id="3aff0b06-1ea0-4173-bf36-1ff56f29f870" name="Book" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6120d6c2-acdf-4482-895c-2698fee0e37b" />
+          </property>
+          <property Id="6e9ce20c-b644-4b99-bfb1-78cc80a8fb2b" name="IsExpired" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="81a6e6df-381e-43fa-b432-b57621246335" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="be7a3526-7ed9-4c74-b8f5-5419da0d90cf" name="IsExpired" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ac1bc20d-7e5f-4eab-9fa6-3f16b92fff67" />
+          </operation>
+          <operation Id="4a1eb02a-2f83-4263-9d9c-6a6f0807beba" name="SendNotification" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4ae00ce0-4a0b-4d31-b0d1-6e0e5dc199e2" />
+          </operation>
+          <operation Id="6f0cb4e6-13ec-4f2d-9c5b-a0ac4544c3f5" name="CancelReservation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="932903a4-e519-47ea-b063-36effef9fe9a" />
+          </operation>
+          <operation Id="c65ad6a2-e79e-49a4-8f9d-d9f85bbaea26" name="Reserve" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55fc8704-0273-4f93-abed-315bf0bad53d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="198f7be7-bf1e-4320-bf1f-9174158e3857" name="Member" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c88490bd-3643-4789-b4e8-f78ef7f55aad" />
+        <generalsInternal>
+          <generalization Id="194f0853-937e-49c6-9cf8-79a373441a36" isSubstitutable="false">
+            <classMoniker Id="fb71aad1-772e-455f-995a-db3ee3707f30" LastKnownName="Common" />
+            <elementDefinition Id="1c21612f-9d61-49a2-be10-104c46d2cd05" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="9709ed34-aa77-49cb-8885-9475d7974f37" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="BorrowBook" isLeaf="false" isAbstract="false">
+            <classMoniker Id="39dd441c-a8d8-4102-8105-e4eae815183b" LastKnownName="BorrowBook" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e1d28c2-fd79-4129-86c1-2c379f4517be" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bbabedb8-5bb8-439f-b487-b451ccdc2d86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="decd87b8-035d-43f8-a109-ba7ba6278d71" name="BorrowBook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="d12e7850-fdf5-4a10-a967-cd8a6e8a3b67" name="Lower" value="*">
+                      <elementDefinition Id="b068a194-46bc-47a4-bc16-26fa99b7770e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="288cd6ab-0863-456e-acb0-0fe7d6d9a72a" name="Upper" value="*">
+                      <elementDefinition Id="967f3133-d872-41e9-9cea-3a251ff78f9d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c29da9ab-dd81-471c-a620-3045d02eb44f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aabbb1bf-ad4b-409a-9a7e-9df51de844a0" />
+          </association>
+          <association Id="1f0e4c86-e528-49e2-9ed2-c869e5498131" isDerived="false" sourceEndRoleName="Member" targetEndRoleName="ReserveBook" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1101afb0-0184-4c53-8dde-c28696494794" LastKnownName="ReserveBook" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fc6fea5-c6d5-4524-8898-0bfa07480415" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50f2b7de-b4ec-464e-b9af-cd1365f62673" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef347486-58a7-4053-8dcb-eb2b2a910c52" name="ReserveBook" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5b1df628-f157-476c-adb4-3d8b9aeeb03f" name="Lower" value="*">
+                      <elementDefinition Id="ec2c87ed-6284-4c8f-8fc2-5df363f089b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cc72cf5d-75cf-42aa-b583-f90d23c4c318" name="Upper" value="*">
+                      <elementDefinition Id="e2274eaf-dc7b-487a-9d99-f7943fa0ce92" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="51a37356-c94e-475c-8172-e41eedd7efa3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40d51fbb-1fb1-4fb7-bd8f-7d20a31b19ef" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="066b8d2a-dacc-43a0-9fea-3812b846303b" name="LstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="efd261f5-2f0e-4a06-a2d3-9e46390c0c78" />
+          </property>
+          <property Id="e12ea79b-b5b4-4c05-8966-e03bc37ef4ce" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8fd7236f-6baa-4cd7-b407-15c8537df14b" />
+          </property>
+          <property Id="552a4f4e-2de1-4627-a0c1-4849218fd5de" name="RefNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ef187500-d39d-481d-9fb8-b40d464b0d6a" />
+          </property>
+          <property Id="27d3650b-4d6b-4db8-985a-e9d84654419c" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38473e9d-e65b-4240-89ae-f3c9b41e68d1" />
+          </property>
+          <property Id="ca397868-4392-45ce-a1a5-8c826f4dd041" name="SSID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ab09aec-ea6f-4239-ab23-cc91bb6f8241" />
+          </property>
+          <property Id="3d10b820-ddd8-4b55-9e7b-a0155d6206cc" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0334068d-cbf8-49e2-bccf-8d99731e05aa" />
+          </property>
+          <property Id="c2803c59-f8c2-4dd7-b9d2-6c344b2f1750" name="MobileNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca6461cc-4651-4216-925a-53478bc2768f" />
+          </property>
+          <property Id="80066fd4-cc0d-458a-93e6-600392d1490b" name="StreetAddressFirst" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3b4f1d88-eeb0-4a15-a1c8-ea879f2037c9" />
+          </property>
+          <property Id="98e725a0-d1e2-44dc-a599-25818747d375" name="StreetAddressSecond" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="816ff212-43d8-40f6-9a50-63e3f541cf2d" />
+          </property>
+          <property Id="7ba4c25e-94a2-4358-9b9e-dc9a82144372" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17d7aa56-618d-4046-941d-fdf22cbad9ce" />
+          </property>
+          <property Id="58f76967-5ac1-412e-a3dc-6f6da4a47575" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bfff92c6-ffef-4f53-81b2-9df606292275" />
+          </property>
+          <property Id="84abcb18-6d08-4060-afd9-82974ae951fd" name="ZipCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4f27cac7-788b-4d90-aec2-79e85e2549a7" />
+          </property>
+          <property Id="2906e8a4-ad9f-4b0b-8bf7-4c5252b41b24" name="Country" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b662b855-f287-43fc-8623-f79e8ee44418" />
+          </property>
+          <property Id="9f6c218b-d7ec-4a99-8716-050ee4c4fcdd" name="UserId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b66324d1-128a-4dd8-8318-ea6f2ef8954a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="72f665d0-e4fa-4cfc-a6c4-b82e3ad04d7a" name="GetFineDetails" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="22ebf212-8517-4a19-92c2-151ff50e3ec0" />
+          </operation>
+          <operation Id="cd9cf247-d1c2-4e8c-ae26-da7c3277d32d" name="GetBorrowDetails" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba53b80a-38da-40fe-b6c4-9d799642d92f" />
+          </operation>
+          <operation Id="06597c27-fea8-4c08-9bbd-f2949954e2fd" name="PendingBooks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="49f43b45-f79e-411a-b16d-ee69d390eed2" />
+          </operation>
+          <operation Id="37efbe88-66ce-4d10-a68b-b5ca4119d683" name="AllTransaction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d605b0e-d3ab-4b71-bed3-4b2978f78f7d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d96ba8c2-5d40-4998-8df6-a617c0fb5a39" name="LMS">
+    <elementDefinition Id="bbd43895-b482-4663-8877-df6a3e933827" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1d2f559c-e367-4394-8799-278c7667f28f">
+        <profileInstance Id="76e90270-e556-4456-8d85-295bf2bf112a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5994dfd5-6486-41f5-a009-555a19b5ed92">
+        <profileInstance Id="5ec16518-1357-419b-a3bc-99e5312d2f27" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

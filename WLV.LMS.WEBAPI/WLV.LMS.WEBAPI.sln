@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.WEBAPI", "WLV.LMS.WEBAPI\WLV.LMS.WEBAPI.csproj", "{23B74F1A-8A3F-4387-A153-90969D962CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.WEBAPI.Tests", "WLV.LMS.WEBAPI.Tests\WLV.LMS.WEBAPI.Tests.csproj", "{C108E3E2-7B54-4DA8-82BF-AF34A9B61078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.BO", "WLV.LMS.BO\WLV.LMS.BO.csproj", "{6D64FC59-BA3A-4D74-B505-7489488F6AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.BLL", "WLV.LMS.BLL\WLV.LMS.BLL.csproj", "{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.DAL", "WLV.LMS.DAL\WLV.LMS.DAL.csproj", "{B7E4B4CE-0411-4347-AA89-20388384D739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.Common", "WLV.LMS.Common\WLV.LMS.Common.csproj", "{5709EE59-2802-47C8-9657-A6C45D20BF3B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "WLV.LMS.UML", "LMS\WLV.LMS.UML.modelproj", "{31C6E70A-0D7A-47BD-95F4-950E36B7C232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WLV.LMS.DTO", "WLV.LMS.DTO\WLV.LMS.DTO.csproj", "{C235D3A7-BE75-4F29-AA3B-EADA49D813D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23B74F1A-8A3F-4387-A153-90969D962CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B74F1A-8A3F-4387-A153-90969D962CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B74F1A-8A3F-4387-A153-90969D962CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B74F1A-8A3F-4387-A153-90969D962CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C108E3E2-7B54-4DA8-82BF-AF34A9B61078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C108E3E2-7B54-4DA8-82BF-AF34A9B61078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C108E3E2-7B54-4DA8-82BF-AF34A9B61078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C108E3E2-7B54-4DA8-82BF-AF34A9B61078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D64FC59-BA3A-4D74-B505-7489488F6AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D64FC59-BA3A-4D74-B505-7489488F6AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D64FC59-BA3A-4D74-B505-7489488F6AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D64FC59-BA3A-4D74-B505-7489488F6AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E4B4CE-0411-4347-AA89-20388384D739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E4B4CE-0411-4347-AA89-20388384D739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E4B4CE-0411-4347-AA89-20388384D739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E4B4CE-0411-4347-AA89-20388384D739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5709EE59-2802-47C8-9657-A6C45D20BF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5709EE59-2802-47C8-9657-A6C45D20BF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5709EE59-2802-47C8-9657-A6C45D20BF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5709EE59-2802-47C8-9657-A6C45D20BF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C6E70A-0D7A-47BD-95F4-950E36B7C232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C6E70A-0D7A-47BD-95F4-950E36B7C232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C6E70A-0D7A-47BD-95F4-950E36B7C232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C6E70A-0D7A-47BD-95F4-950E36B7C232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C235D3A7-BE75-4F29-AA3B-EADA49D813D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C235D3A7-BE75-4F29-AA3B-EADA49D813D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C235D3A7-BE75-4F29-AA3B-EADA49D813D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C235D3A7-BE75-4F29-AA3B-EADA49D813D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://krajendran.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WLV.LMS.BLL\\WLV.LMS.BLL.csproj
+		SccProjectName1 = WLV.LMS.BLL
+		SccLocalPath1 = WLV.LMS.BLL
+		SccProjectUniqueName2 = WLV.LMS.BO\\WLV.LMS.BO.csproj
+		SccProjectName2 = WLV.LMS.BO
+		SccLocalPath2 = WLV.LMS.BO
+		SccProjectUniqueName3 = WLV.LMS.Common\\WLV.LMS.Common.csproj
+		SccProjectName3 = WLV.LMS.Common
+		SccLocalPath3 = WLV.LMS.Common
+		SccProjectUniqueName4 = WLV.LMS.DAL\\WLV.LMS.DAL.csproj
+		SccProjectName4 = WLV.LMS.DAL
+		SccLocalPath4 = WLV.LMS.DAL
+		SccProjectUniqueName5 = WLV.LMS.WEBAPI.Tests\\WLV.LMS.WEBAPI.Tests.csproj
+		SccProjectName5 = WLV.LMS.WEBAPI.Tests
+		SccLocalPath5 = WLV.LMS.WEBAPI.Tests
+		SccProjectUniqueName6 = WLV.LMS.WEBAPI\\WLV.LMS.WEBAPI.csproj
+		SccProjectName6 = WLV.LMS.WEBAPI
+		SccLocalPath6 = WLV.LMS.WEBAPI
+		SccProjectUniqueName7 = LMS\\WLV.LMS.UML.modelproj
+		SccProjectName7 = LMS
+		SccLocalPath7 = LMS
+		SccProjectUniqueName8 = WLV.LMS.DTO\\WLV.LMS.DTO.csproj
+		SccProjectName8 = WLV.LMS.DTO
+		SccLocalPath8 = WLV.LMS.DTO
+	EndGlobalSection
+EndGlobal

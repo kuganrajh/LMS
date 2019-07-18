@@ -1,0 +1,2071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="bbd43895-b482-4663-8877-df6a3e933827"
+  name="LMS" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="aca1fc94-5836-4189-8e41-56002a15b716"
+        name="Librarian"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e37a944c-a52b-483d-ae82-571dccf4b120"
+            isDerived="false"
+            sourceEndRoleName="Librarian"
+            targetEndRoleName="Book Search"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4d38b49d-b0e1-4f3e-867f-e0db4878531c"
+              LastKnownName="Book Search"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55bae8bd-ad13-4cfd-85f2-4f557ae642d2"
+                  name="Librarian"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="290b1a30-f2fd-420e-a98d-cbaf5d70f1c0"
+                  name="Book Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="50064cd8-452e-481f-b880-6ab185d7be82"
+            isDerived="false"
+            sourceEndRoleName="Librarian"
+            targetEndRoleName="Issue Book"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5836f0cb-47ce-4b83-a9bb-938aeed424b1"
+              LastKnownName="Issue Book"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ec66302-a9f2-4238-b513-e355f49018ad"
+                  name="Librarian"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4a858af-bdec-43dc-af25-648c242fdc24"
+                  name="Issue Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0551ed2f-a21a-48eb-9f76-022ea849d3f0"
+            isDerived="false"
+            sourceEndRoleName="Librarian"
+            targetEndRoleName="Return Book"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="305279a3-6f24-4cb8-9787-6673fd47c801"
+              LastKnownName="Return Book"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a318f63-b980-4df3-9e37-4fc6a355ac80"
+                  name="Librarian"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6a50b5d-2972-4301-bc1b-2f6c0893a457"
+                  name="Return Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69d014a9-a12e-4eb9-9fe4-64c9a3f00c7b"
+            isDerived="false"
+            sourceEndRoleName="Librarian"
+            targetEndRoleName="Maintain Book Records"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="59acc5d8-ec9a-41a7-a342-738f2cfdcb9a"
+              LastKnownName="Maintain Book Records"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2428e3ee-ed4d-4af8-b827-bb5c62153245"
+                  name="Librarian"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3deda933-c83b-40b7-862e-ab9a5463feec"
+                  name="Maintain Book Records"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0fe0d4fc-235d-4905-9908-6af211011513"
+            isDerived="false"
+            sourceEndRoleName="Librarian"
+            targetEndRoleName="Member Registration "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0f986e6d-7ade-496d-b42f-d108088d1fc3"
+              LastKnownName="Member Registration "
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5335a007-ac24-4805-8e74-595235c8fa18"
+                  name="Librarian"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fcec284-3b5a-4d03-8da8-03a2c8989cc3"
+                  name="Member Registration "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="73d3fa0e-b624-4ac4-9354-db8416322ee7"
+        name="Borrower "
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5d46112d-a73b-4824-8ade-6a5541a15be4"
+            isDerived="false"
+            sourceEndRoleName="Borrower "
+            targetEndRoleName="Reserve Book"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4f8f1dd5-a245-4652-8677-a5d5e5ca6df1"
+              LastKnownName="Reserve Book"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="622203ca-9290-4672-99e0-211821d75f43"
+                  name="Borrower "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3659da6-e3dc-4e53-837c-7d8fe2ba1514"
+                  name="Reserve Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="209fde0a-8157-4b2d-8741-bc5d12342094"
+            isDerived="false"
+            sourceEndRoleName="Borrower "
+            targetEndRoleName="Book Search"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4d38b49d-b0e1-4f3e-867f-e0db4878531c"
+              LastKnownName="Book Search"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d054dd1f-d117-457c-a702-d42ee99c838d"
+                  name="Borrower "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78b8a528-0dfc-4dad-ada0-da655be4fc37"
+                  name="Book Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="81a502c3-4814-49f6-a079-cf29265bd02a"
+            isDerived="false"
+            sourceEndRoleName="Borrower "
+            targetEndRoleName="Issue Book"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5836f0cb-47ce-4b83-a9bb-938aeed424b1"
+              LastKnownName="Issue Book"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c59a6c8-5cec-4a27-a305-f6380d46d7f6"
+                  name="Borrower "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61e281b4-3474-4c93-9660-f3746932cd59"
+                  name="Issue Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f1808b26-3d27-4ec4-8c59-d0d7c07c77c3"
+            isDerived="false"
+            sourceEndRoleName="Borrower "
+            targetEndRoleName="Return Book"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="305279a3-6f24-4cb8-9787-6673fd47c801"
+              LastKnownName="Return Book"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20a9e1e3-a39e-40b9-864d-9e9ec8c9333b"
+                  name="Borrower "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1b22822-1a3e-47e4-9498-b1ebd79433a1"
+                  name="Return Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f8f1dd5-a245-4652-8677-a5d5e5ca6df1"
+        name="Reserve Book"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="37cfa9b2-994b-44de-89d4-717dfcb7bcdf">
+            <useCaseMoniker
+              Id="632b7064-fffd-4b0d-bc34-ee5a61ffa2df"
+              LastKnownName="Check Availability "
+              LastKnownLocation="LMS.uml" />
+          </include>
+          <include
+            Id="343df998-08ef-45ee-ba6c-5eeeccf9ea4d">
+            <useCaseMoniker
+              Id="18c17a63-f02d-4a68-9e13-39261ae6b66d"
+              LastKnownName="Verify Borrower"
+              LastKnownLocation="LMS.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="119528f1-ef9e-414a-a121-cb029b219e3b"
+        name="Borrow Book"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="802b4bc0-fe79-4f1b-8c91-0c74d12f669d">
+            <useCaseMoniker
+              Id="4f8f1dd5-a245-4652-8677-a5d5e5ca6df1"
+              LastKnownName="Reserve Book"
+              LastKnownLocation="LMS.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="632b7064-fffd-4b0d-bc34-ee5a61ffa2df"
+        name="Check Availability "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="18c17a63-f02d-4a68-9e13-39261ae6b66d"
+        name="Verify Borrower"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9033c48f-643a-48fc-9b77-41a08cd27621"
+        name="Reservation Expire "
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c83a6415-c23d-4b8c-9467-6e34b102ebeb">
+            <useCaseMoniker
+              Id="4f8f1dd5-a245-4652-8677-a5d5e5ca6df1"
+              LastKnownName="Reserve Book"
+              LastKnownLocation="LMS.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="bfb9946e-32bb-4f16-a8c1-491f39d5999b">
+            <useCaseMoniker
+              Id="70c59969-590e-4f59-8626-dc2726a266a6"
+              LastKnownName="Notification"
+              LastKnownLocation="LMS.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70c59969-590e-4f59-8626-dc2726a266a6"
+        name="Notification"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f986e6d-7ade-496d-b42f-d108088d1fc3"
+        name="Member Registration "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4d38b49d-b0e1-4f3e-867f-e0db4878531c"
+        name="Book Search"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5836f0cb-47ce-4b83-a9bb-938aeed424b1"
+        name="Issue Book"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="305279a3-6f24-4cb8-9787-6673fd47c801"
+        name="Return Book"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="59acc5d8-ec9a-41a7-a342-738f2cfdcb9a"
+        name="Maintain Book Records"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="be09383e-b138-468a-81fb-5af1956167a4"
+        name="Late Payment Fee"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0e484b28-4520-481c-a02f-cebe7f431ebd">
+            <useCaseMoniker
+              Id="305279a3-6f24-4cb8-9787-6673fd47c801"
+              LastKnownName="Return Book"
+              LastKnownLocation="LMS.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e734eb6f-3b38-4477-8880-fa794117a693"
+        name="Search Form Google Service"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5dc749b3-cf4f-48b7-8e29-dda58e170b70">
+            <useCaseMoniker
+              Id="59acc5d8-ec9a-41a7-a342-738f2cfdcb9a"
+              LastKnownName="Maintain Book Records"
+              LastKnownLocation="LMS.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6d14dcb1-9ace-447b-a415-28b09882cf5d"
+        name="Created &#xA;Update &#xA;Delete "
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="318ead06-6aba-4e91-8356-da033710b7e9">
+            <useCaseMoniker
+              Id="59acc5d8-ec9a-41a7-a342-738f2cfdcb9a"
+              LastKnownName="Maintain Book Records"
+              LastKnownLocation="LMS.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="42a32626-545e-410d-92b0-254357637353"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d9305ba0-107a-4b52-9607-6bbbe8ee7aab"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f4a74a5d-1df6-4cee-8913-2b00dad43487"
+            isDerived="false"
+            sourceEndRoleName="Class2"
+            targetEndRoleName="Class3"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8c4186d6-d417-41f2-b053-d6ef7ad6b6b1"
+              LastKnownName="Class3"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="383eba01-e1ca-4957-b6d1-37f2769dfcf5"
+                  name="Class2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e505d70b-d302-445a-bf2e-daf279470f74"
+                  name="Class3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8c4186d6-d417-41f2-b053-d6ef7ad6b6b1"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ff82d512-2955-4b00-8d37-c5bb9c2d83f4"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="52553a6a-a64b-416b-93ee-97c7c66b744b"
+            isDerived="false"
+            sourceEndRoleName="Class4"
+            targetEndRoleName="Class2"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d9305ba0-107a-4b52-9607-6bbbe8ee7aab"
+              LastKnownName="Class2"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad54d601-6579-4a8a-aed3-3b1c29897ded"
+                  name="Class4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d53693b-4f74-4917-97a8-e31c40a41cbd"
+                  name="Class2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a5b4aa54-135d-46e7-a4b5-61e2adf16170"
+            isDerived="false"
+            sourceEndRoleName="Class4"
+            targetEndRoleName="Class5"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d4ded20f-b44d-4fb5-b0eb-5c6c24850219"
+              LastKnownName="Class5"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bda2202f-5ce8-4049-a378-b2dc35888669"
+                  name="Class4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c8d1b76-b673-4a5a-b96d-5d345056fa78"
+                  name="Class5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d4ded20f-b44d-4fb5-b0eb-5c6c24850219"
+        name="Class5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2b878e0a-8225-450a-8606-096e059c8466"
+        name="Common"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f8d2c34a-5d0a-43b7-b5c3-fb5e3f530c8b"
+            name="IsActive"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c7903db8-9e6f-416e-8b4a-022dc3b6b6c1"
+            name="CreatedAt"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4916e0a7-b817-4ad1-b7ad-1ed3d69998c6"
+            name="CreatedBy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9855ae4c-f527-4f6d-a408-9bf3c6577574"
+            name="UpdatedBy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="72a50d2f-f594-472e-ba24-4514d8f452cd"
+            name="UpdatedAt"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0b26bc39-bf41-430a-a8d2-e530b18f1720"
+            name="SetTimeNow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9032552f-24c9-42cb-be08-ebe742a78ca6"
+            name="UpdateTimeNow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="57b733b7-7658-4c04-a8f9-1f4c51692d32"
+        name="Category"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c98b8f44-106b-4fc7-80fa-4be4fddfe90a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ecaac6fb-ec65-4d10-becf-da94c59df66e"
+            name="Books"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d6235219-39f6-4187-8593-7e92ea1f6cea"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8ff5ab1d-d236-4e62-8df5-a7d4a3bb8a51"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f02eeea6-2f1a-4bd9-9222-57e29606189e"
+            name="GetCategory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9f91561b-cbb6-4f4b-b33f-ad3e5c8da0e4"
+            name="UpdateCategory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5ce2b5dc-29a5-418c-ad3c-5836c8578685"
+            name="CreateCategory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0d3e75ca-509c-4598-b2a8-2da55c4141c5"
+            name="DeleteCategoy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="77b99ea6-8c33-4877-ae3a-4fabdf44ed0c"
+        name="Author"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4a112772-d4ae-4851-a9fd-1796865d8b4d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1c15b371-489a-4138-bec2-56ae5df40e94"
+            name="Books"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="13d9a62e-1246-4242-9445-9afe9989a1d1"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="39236631-c33e-4606-9a93-ca1dd4908d3d"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="34ad070b-5d0a-4dce-abaa-f18cf34ab06c"
+            name="CreateAuthor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b869398e-8321-4266-89ab-c7d2ff05403b"
+            name="UpdateAuthor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5ae3ea27-bb2c-4b90-804f-dab0417b47b9"
+            name="GetAuthor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b3a66ec5-d111-44eb-9844-60658919236d"
+            name="DeleteAuthor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="31300173-2367-477f-9f86-3296ceb52164"
+        name="Book"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="cef63649-0c0e-4658-9797-1cb2107927d8">
+            <classMoniker
+              Id="57b733b7-7658-4c04-a8f9-1f4c51692d32"
+              LastKnownName="Category"
+              LastKnownLocation="LMS.uml" />
+          </dependency>
+          <dependency
+            Id="4c884a93-e7a8-4fa3-8084-203b68d4118b">
+            <classMoniker
+              Id="77b99ea6-8c33-4877-ae3a-4fabdf44ed0c"
+              LastKnownName="Author"
+              LastKnownLocation="LMS.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="8c93536f-9561-4dde-aebe-8504dcea5ee4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7aabb5c5-476a-4150-ad1b-421a3f6376a4"
+            isDerived="false"
+            sourceEndRoleName="Book"
+            targetEndRoleName="BorrowBook"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="18b77771-7449-488f-bdac-315e7e6961b2"
+              LastKnownName="BorrowBook"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e62062df-2d7b-4968-aeef-05f41bed813d"
+                  name="Book"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="478a6148-9c2d-4760-8451-071b733d92c5"
+                  name="BorrowBook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="52d61dd0-beb3-40ef-9227-bc3923fb29fc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="69da69b7-938b-4c95-9fda-6295fdb94305"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="49ee0ae2-c341-4dd3-af7d-1b6cf4063da1"
+            name="Categories"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e2f6be2d-f7c8-4380-bbde-df9a0beb26e9"
+            name="Authors"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="26cea670-db7d-4ce5-a126-d8c89a875b70"
+            name="BookTotalCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7afba73d-1095-412a-a9dc-dc2e791ee99d"
+            name="BookCurrentCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b5d12ca9-1767-455f-b2d5-6902fbe44779"
+            name="ImageLink"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6df7e766-1796-488a-979f-f96719163957"
+            name="InfoLink"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b0a3ab65-fdf8-47b7-974b-6773c65390a1"
+            name="PageCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5f9d6954-a6d9-4483-acdc-0d3b67f9b9e0"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="60d96ee8-70db-487e-8022-4e999f324893"
+            name="PublishedDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9a8d78c2-4e36-41d0-91da-a8fbfaa98d56"
+            name="Publisher"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6b342f29-08dd-4626-abaa-8d45fa9569fe"
+            name="Title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4865663c-a67e-48e9-a756-f9bc3e73cb47"
+            name="ISBN"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2cac5494-0020-42ce-96f5-7595e89f80f6"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d2939318-37d2-4e8c-a8ea-76da94d43275"
+            name="GetAvailability"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c2d59fc-5ce7-48b6-8643-f09fd4ecfb34"
+            name="GetCount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="18b77771-7449-488f-bdac-315e7e6961b2"
+        name="BorrowBook"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="374980d2-6e7f-4c19-b1f6-6bb5856d078d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4f2aa9dc-d694-45b0-9bb4-fad1f2457160"
+            name="ReserveBook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6bfba336-2d66-401b-929c-689dd279eddc"
+            name="ReserveBookId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="955498ba-d3a6-4ebd-a160-954683882af9"
+            name="Member"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="82383548-7535-4ea8-b5ac-762e492165ad"
+            name="MemberId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bdb39cee-4628-4601-b605-ae3a88ace4f2"
+            name="Book"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3d5e574f-a79e-4327-b3c1-0154c453c59f"
+            name="BookId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3ee046ed-0280-4f4f-9623-b1f0842d32b8"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0a8d3a11-f3c1-4730-99b5-47ccb7cbab6c"
+            name="Borrow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9711c787-0954-4cfb-8e7f-d3cfda466648"
+            name="CancelBorrow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ee85bad4-e0d2-49c1-8b24-6eb06258a1ef"
+            name="GetBorrowedBookInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c02ba7a-ea61-44ec-89f9-fdc928b43f6a"
+        name="ReturnBook"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="fea3973a-57af-47b9-89f7-100c63e3a023">
+            <classMoniker
+              Id="430a95d1-abc1-477d-b779-55bcc0a49f36"
+              LastKnownName="ReserveBook"
+              LastKnownLocation="LMS.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="a747b5e9-71c0-47af-af15-c22413cf9fb2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="586d4a41-9970-4a05-8b95-1092a3ed566f"
+            name="BorrowBook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="69de2cca-f14d-4190-a301-a84480f36948"
+            name="BorrowBookId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bf0675dd-84c7-4fa2-b489-d31496d56bc1"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e17f7f02-1fb2-463b-a6c7-d215067171ef"
+            name="IsLate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8216ac2a-9daf-44a3-a4ad-314e1bbe9451"
+            name="RetrunBook"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0cf7cbfd-a31a-4747-80ea-539dc593ed2a"
+        name="LatePayment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="55cd1898-696f-4953-82c5-9dec08b3a9d6">
+            <classMoniker
+              Id="7c02ba7a-ea61-44ec-89f9-fdc928b43f6a"
+              LastKnownName="ReturnBook"
+              LastKnownLocation="LMS.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7a840568-4040-495c-8402-6f316a2fcb18"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="07e66f83-426c-46b9-925a-eff5774694cc"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ac77acf6-537a-4e59-9562-53eff50d0c31"
+            name="NoOfDateDelays"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fbe9c568-eef6-4ca7-a68a-218812f6a360"
+            name="PaymentAmount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe1c8547-0e9e-49ad-9999-a83b148e5d87"
+            name="ReturnBookId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5dff3123-354a-4765-887a-7edda15909c1"
+            name="ReturnBook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a497e471-a805-4041-90cf-feb0695e2395"
+            name="CalculateFine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="02283f1f-9db9-4670-84e6-a07a6b8a43c8"
+            name="GetLatePymentInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="430a95d1-abc1-477d-b779-55bcc0a49f36"
+        name="ReserveBook"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4aac88a8-2dd7-46a3-9fce-008fd117da9b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="11bbd324-a07d-4c7c-9958-d7c14f4e0169"
+            isDerived="false"
+            sourceEndRoleName="ReserveBook"
+            targetEndRoleName="BorrowBook"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="18b77771-7449-488f-bdac-315e7e6961b2"
+              LastKnownName="BorrowBook"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c781a858-81e4-48f7-ab8c-e02a4e80b865"
+                  name="ReserveBook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bbb2befa-78fd-45bf-89df-e23b76d44ffb"
+                  name="BorrowBook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e1def83a-3483-4ac6-8608-80ec8f16a73f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fb3e62a7-dd43-4aa6-a2e0-86054629a661"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f75ceb2d-2667-44be-b930-7c13c70e62b5"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="13fe17b6-6c34-4bb3-9608-a97dd9f97568"
+            name="BarrowDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="05f53c2f-12f4-4695-a5ac-9510609c2f0e"
+            name="MemberId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7f2ec7a4-3a82-4160-aa59-19d54bf1718e"
+            name="Member"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="827e481a-06d8-406c-9e4d-805aaad2cbb4"
+            name="BookId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6120d6c2-acdf-4482-895c-2698fee0e37b"
+            name="Book"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="81a6e6df-381e-43fa-b432-b57621246335"
+            name="IsExpired"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ac1bc20d-7e5f-4eab-9fa6-3f16b92fff67"
+            name="IsExpired"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4ae00ce0-4a0b-4d31-b0d1-6e0e5dc199e2"
+            name="SendNotification"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="932903a4-e519-47ea-b063-36effef9fe9a"
+            name="CancelReservation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="55fc8704-0273-4f93-abed-315bf0bad53d"
+            name="Reserve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c88490bd-3643-4789-b4e8-f78ef7f55aad"
+        name="Member"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1c21612f-9d61-49a2-be10-104c46d2cd05"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2b878e0a-8225-450a-8606-096e059c8466"
+              LastKnownName="Common"
+              LastKnownLocation="LMS.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="aabbb1bf-ad4b-409a-9a7e-9df51de844a0"
+            isDerived="false"
+            sourceEndRoleName="Member"
+            targetEndRoleName="BorrowBook"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="18b77771-7449-488f-bdac-315e7e6961b2"
+              LastKnownName="BorrowBook"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bbabedb8-5bb8-439f-b487-b451ccdc2d86"
+                  name="Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c29da9ab-dd81-471c-a620-3045d02eb44f"
+                  name="BorrowBook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b068a194-46bc-47a4-bc16-26fa99b7770e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="967f3133-d872-41e9-9cea-3a251ff78f9d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="40d51fbb-1fb1-4fb7-bd8f-7d20a31b19ef"
+            isDerived="false"
+            sourceEndRoleName="Member"
+            targetEndRoleName="ReserveBook"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="430a95d1-abc1-477d-b779-55bcc0a49f36"
+              LastKnownName="ReserveBook"
+              LastKnownLocation="LMS.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50f2b7de-b4ec-464e-b9af-cd1365f62673"
+                  name="Member"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51a37356-c94e-475c-8172-e41eedd7efa3"
+                  name="ReserveBook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ec2c87ed-6284-4c8f-8fc2-5df363f089b1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e2274eaf-dc7b-487a-9d99-f7943fa0ce92"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="efd261f5-2f0e-4a06-a2d3-9e46390c0c78"
+            name="LstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8fd7236f-6baa-4cd7-b407-15c8537df14b"
+            name="FirstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ef187500-d39d-481d-9fb8-b40d464b0d6a"
+            name="RefNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="38473e9d-e65b-4240-89ae-f3c9b41e68d1"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3ab09aec-ea6f-4239-ab23-cc91bb6f8241"
+            name="SSID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0334068d-cbf8-49e2-bccf-8d99731e05aa"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ca6461cc-4651-4216-925a-53478bc2768f"
+            name="MobileNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3b4f1d88-eeb0-4a15-a1c8-ea879f2037c9"
+            name="StreetAddressFirst"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="816ff212-43d8-40f6-9a50-63e3f541cf2d"
+            name="StreetAddressSecond"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="17d7aa56-618d-4046-941d-fdf22cbad9ce"
+            name="City"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bfff92c6-ffef-4f53-81b2-9df606292275"
+            name="State"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4f27cac7-788b-4d90-aec2-79e85e2549a7"
+            name="ZipCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b662b855-f287-43fc-8623-f79e8ee44418"
+            name="Country"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b66324d1-128a-4dd8-8318-ea6f2ef8954a"
+            name="UserId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="22ebf212-8517-4a19-92c2-151ff50e3ec0"
+            name="GetFineDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ba53b80a-38da-40fe-b6c4-9d799642d92f"
+            name="GetBorrowDetails"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="49f43b45-f79e-411a-b16d-ee69d390eed2"
+            name="PendingBooks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2d605b0e-d3ab-4b71-bed3-4b2978f78f7d"
+            name="AllTransaction"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

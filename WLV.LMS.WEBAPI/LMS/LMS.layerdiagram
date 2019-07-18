@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a94b345d-f4d6-48f8-8e78-a2a20dd15275" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="ab0d87bc-e8e2-4754-a5aa-1d0035cc8e4a" name="Rest Service Layer " />
+    <layer Id="de2a619c-daca-466d-8708-e99f5644b4cc" name="Bussiness Object Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="435af18e-d50a-42b2-9c1f-f5af88db0590" direction="Forward">
+          <layerMoniker Id="9d7c573b-6243-437a-9ce7-5285e96d18fa" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="8649aa77-cba6-4377-840a-f26cac4c7091" direction="Forward">
+          <layerMoniker Id="06e8c8b8-7841-4384-bcff-dd8c37705228" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ffec16b0-26a4-41a9-bb93-2ee3328cb326" direction="Forward">
+          <layerMoniker Id="ab0d87bc-e8e2-4754-a5aa-1d0035cc8e4a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="9d7c573b-6243-437a-9ce7-5285e96d18fa" name="Bussiness Logic Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ba088f6e-c121-4f9f-8d71-75ca174dda53" direction="Forward">
+          <layerMoniker Id="ab0d87bc-e8e2-4754-a5aa-1d0035cc8e4a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="06e8c8b8-7841-4384-bcff-dd8c37705228" name="Data Access Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="fa033365-99e3-46ee-9078-c1ed038bc992" direction="Forward">
+          <layerMoniker Id="9d7c573b-6243-437a-9ce7-5285e96d18fa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="c1c8c14c-eaaa-4e8b-b684-bf9de74e611e" name="Service (Common) Layer ">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6360c03a-4d9c-4a3a-a61b-640d51dbf2f5" direction="Forward">
+          <layerMoniker Id="9d7c573b-6243-437a-9ce7-5285e96d18fa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="1bb8ee6c-0666-49e7-8307-e9167a7ddd26" name="Data Transfer Object">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a154e7fd-c4d7-4551-8b78-fd5d220cf21a" direction="Forward">
+          <layerMoniker Id="ab0d87bc-e8e2-4754-a5aa-1d0035cc8e4a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1e85cf25-3516-46da-b43f-4b9eb13920b7" direction="Forward">
+          <layerMoniker Id="9d7c573b-6243-437a-9ce7-5285e96d18fa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

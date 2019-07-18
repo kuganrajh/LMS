@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7338DE7D-37A3-4CF1-B1D5-77ADADAFCBAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLV.LMS.BLL</RootNamespace>
+    <AssemblyName>WLV.LMS.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IDualService.cs" />
+    <Compile Include="Interfaces\IReservationExpireService.cs" />
+    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BookService.cs" />
+    <Compile Include="Services\BorrowBookService.cs" />
+    <Compile Include="Services\MemberService.cs" />
+    <Compile Include="Services\ReservationExpireService.cs" />
+    <Compile Include="Services\ReserveBookService.cs" />
+    <Compile Include="Services\RetrunBookService.cs" />
+    <Compile Include="Services\SystemOptionService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WLV.LMS.BO\WLV.LMS.BO.csproj">
+      <Project>{6d64fc59-ba3a-4d74-b505-7489488f6ab6}</Project>
+      <Name>WLV.LMS.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLV.LMS.Common\WLV.LMS.Common.csproj">
+      <Project>{5709ee59-2802-47c8-9657-a6c45d20bf3b}</Project>
+      <Name>WLV.LMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLV.LMS.DAL\WLV.LMS.DAL.csproj">
+      <Project>{b7e4b4ce-0411-4347-aa89-20388384d739}</Project>
+      <Name>WLV.LMS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLV.LMS.DTO\WLV.LMS.DTO.csproj">
+      <Project>{c235d3a7-be75-4f29-aa3b-eada49d813d6}</Project>
+      <Name>WLV.LMS.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
